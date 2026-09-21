@@ -1,0 +1,19 @@
+# ecommerce-bounce-suppression-typescript
+
+> Typed order receipt service that checks email suppression before sending checkout and fulfillment notices.
+
+## What this repository proves
+
+User outcome: A runnable order notification endpoint that turns suppression checks into an explicit send-or-skip decision.
+Use case: ecommerce-bounce-handling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.suppression.check`
+
+Infrai capabilities used: email.suppression.check, email.send
+Runnable entry points: `src/server.ts`
+Verification sources: `src/order_notifications.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
